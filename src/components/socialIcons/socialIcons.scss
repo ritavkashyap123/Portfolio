@@ -1,0 +1,53 @@
+.SocialIcons {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        height: 100vh;
+        width: 100%;
+        font-family: arial;
+      }
+      
+      section {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+      
+      .navbtns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 3%;
+        position: fixed;
+        top: 50%;
+        right: 1rem;
+        z-index: 100;
+        transform: translateY(-50%);
+        gap: 50px;
+      }
+      
+      a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: white;
+        cursor: pointer;
+      }
+      .icon {
+        font-size: 1.8rem;
+        transition: 0.3s;
+        &:hover{
+            font-size: 2.5rem;
+            transition: 0.3s;
+        }
+      }
+      
+      
+}
