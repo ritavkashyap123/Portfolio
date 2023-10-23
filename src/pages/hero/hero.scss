@@ -1,0 +1,48 @@
+.Hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 90vh;
+  .hero-left {
+    color: #d3d3d3;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.5rem;
+    .head {
+      color: #00aeff;
+    }
+    .hr {
+      width: 20%;
+    }
+    .text {
+      font-size: 16px;
+      font-family: monospace;
+      span {
+        color: #41ffef;
+        font-weight: bold;
+      }
+    }
+  }
+  .hero-right {
+    flex: 1;
+  }
+}
+@media (max-width: 1000px) {
+  .Hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    .hero-left {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      flex: none;
+    }
+    .hero-right {
+      flex: none;
+    }
+  }
+}

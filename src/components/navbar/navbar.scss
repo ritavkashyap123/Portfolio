@@ -1,0 +1,98 @@
+.Navbar {
+  //   font-family: monospace;
+  .nav {
+    height: 3.5rem;
+    width: 100%;
+    background-color: #00000000;
+    border-bottom: 1px solid #d3d3d3;
+    position: relative;
+    .nav-header {
+      cursor: pointer;
+      display: inline;
+      .nav-title {
+        display: inline-block;
+        font-size: 22px;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        transition: 0.3s;
+        &:hover {
+          color: #41ffef;
+          transition: 0.3s;
+        }
+      }
+    }
+    .nav-btn {
+      display: none;
+    }
+    .nav-links {
+      display: inline;
+      float: right;
+      font-size: 18px;
+      .link {
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        color: #efefef;
+        transition: 0.3s;
+        &:hover {
+          color: #41ffef;
+          transition: 0.3s;
+        }
+        &:active {
+          color: #00aeff;
+        }
+      }
+    }
+    #nav-check {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .nav {
+      .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        label {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          padding: 13px;
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+          }
+          span {
+            display: block;
+            width: 25px;
+            height: 10px;
+            border-top: 2px solid #eee;
+          }
+        }
+      }
+      .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+        .link {
+          display: block;
+          width: 100%;
+        }
+      }
+      #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+      }
+    }
+  }
+}
