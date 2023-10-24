@@ -5,4 +5,5 @@ body {
     color: white;
     font-family: "Black Ops One";
     margin: 0;
+    scroll-behavior: smooth;
 }

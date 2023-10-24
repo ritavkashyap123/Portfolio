@@ -14,15 +14,25 @@
     .head {
       color: #00aeff;
     }
+    .tagline {
+      font-size: 1.5rem;
+      span {
+        color: #41ffef;
+      }
+    }
     .hr {
       width: 20%;
     }
     .text {
       font-size: 16px;
       font-family: monospace;
+      line-height: 28px;
       span {
         color: #41ffef;
         font-weight: bold;
+      }
+      .span {
+        font-size: 20px;
       }
     }
   }
@@ -37,8 +47,8 @@
     justify-content: center;
     height: auto;
     .hero-left {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
       flex: none;
     }
     .hero-right {

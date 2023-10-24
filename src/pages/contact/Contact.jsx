@@ -5,8 +5,8 @@ import './contact.scss'
 const Contact = () => {
 
   return (
-    <div className='Contact'>
-        ABC
+    <div className='Contact' id='cnt'>
+        Contact
     </div>
   )
 }

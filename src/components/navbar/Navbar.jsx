@@ -4,6 +4,14 @@ import { Link } from 'react-router-dom'
 import "./navbar.scss"
 
 const Navbar = () => {
+
+  const handleClickScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  
   return (
     <div className="Navbar">
       <div className="nav">
@@ -19,22 +27,22 @@ const Navbar = () => {
           </label>
         </div>
         <div className="nav-links">
-          <Link to='#' className="link" target='_block'>
+          <Link to='# ' className="link" target='_block'>
             Home
           </Link>
-          <Link to='#' className="link" target='_block'>
+          <Link to='#pro' className="link" target='_block'>
             Projects
           </Link>
-          <Link to='#' className="link" target='_block'>
+          <Link to='#exp' className="link" target='_block'>
             Experience
           </Link>
-          <Link to='#' className="link" target='_block'>
+          <Link to='#sk' className="link" target='_block'>
             Skills
           </Link>
-          <Link to='#' className="link" target='_block'>
+          <Link to='#ach' className="link" target='_block'>
             Achievements
           </Link>
-          <Link to='#' className="link" target='_block'>
+          <Link to='#cnt' className="link" target='_block'>
             Contact
           </Link>
         </div>

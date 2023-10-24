@@ -1,11 +1,10 @@
 .Navbar {
-  //   font-family: monospace;
   .nav {
     height: 3.5rem;
     width: 100%;
-    background-color: #00000000;
+    background-color: #00000030;
     border-bottom: 1px solid #d3d3d3;
-    position: relative;
+    position: fixed;
     .nav-header {
       cursor: pointer;
       display: inline;
