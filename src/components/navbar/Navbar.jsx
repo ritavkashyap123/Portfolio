@@ -27,22 +27,22 @@ const Navbar = () => {
           </label>
         </div>
         <div className="nav-links">
-          <Link to='# ' className="link" target='_block'>
+          <Link to='/home' className="link" target='_block'>
             Home
           </Link>
-          <Link to='#pro' className="link" target='_block'>
+          <Link to='/project' className="link" target='_block'>
             Projects
           </Link>
-          <Link to='#exp' className="link" target='_block'>
+          <Link to='/Experience' className="link" target='_block'>
             Experience
           </Link>
-          <Link to='#sk' className="link" target='_block'>
+          <Link to='/skills' className="link" target='_block'>
             Skills
           </Link>
-          <Link to='#ach' className="link" target='_block'>
+          <Link to='/achievements' className="link" target='_block'>
             Achievements
           </Link>
-          <Link to='#cnt' className="link" target='_block'>
+          <Link to='/contact' className="link" target='_block'>
             Contact
           </Link>
         </div>

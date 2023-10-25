@@ -16,11 +16,6 @@ const Home = () => {
       <div className="Home">
           <SocialIcons />
           <Hero />
-          <Project />
-          <Experience />
-          <Skills />
-          <Achievements />
-          <Contact />
       </div>
     </>
   );
