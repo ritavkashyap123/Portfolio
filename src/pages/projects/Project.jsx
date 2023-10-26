@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import "./project.scss"
+import "./project.scss";
+import Navbar from "../../components/navbar/Navbar";
 
 const Project = () => {
   return (
-    <div className='Project' id='pro' >Project</div>
-  )
-}
+    <>
+      <Navbar />
+      <div className="Project"></div>
+    </>
+  );
+};
 
-export default Project
+export default Project;

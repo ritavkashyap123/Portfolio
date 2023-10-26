@@ -1,22 +1,32 @@
 .Experience {
+  height: 90vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   body {
     margin: 0;
     padding: 2rem 0;
   }
   .head {
-    margin-left: 2rem;
+    margin: 1rem 2rem;
     font-size: 2.5rem;
     color: #ffffff;
-    span {
-        color: #00aeff;
-    }
     .hr {
       width: 10%;
     }
+  }
+  .head2 {
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    color: #41ffef;
   }
   .container {
     width: 80%;
@@ -68,7 +78,7 @@
     border-radius: 50%;
     border: 2px solid #fff;
     background: #4fc1e9;
-    margin-top: 10px;
+    margin-top: 2rem;
     z-index: 9999;
   }
 
@@ -80,6 +90,7 @@
     color: #ffffff;
     cursor: pointer;
   }
+  
   .details {
     display: flex;
   }
@@ -87,6 +98,7 @@
     color: #ddd;
     font-size: 16px;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
   }

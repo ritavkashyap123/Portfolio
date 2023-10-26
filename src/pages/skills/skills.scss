@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins&family=Roboto&display=swap");
 .Skills {
-  z-index: 5;
+  height: 90vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   .head {
-    margin-left: 2rem;
+    margin: 1rem 2rem;
     font-size: 2.5rem;
     color: #ffffff;
     span {
@@ -63,7 +70,7 @@
         }
       }
       .content {
-        font-family: monospace;
+        font-family: Roboto;
         flex: 1;
         padding-left: 0.5rem;
         display: flex;

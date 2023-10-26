@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import "./achievements.scss"
+import "./achievements.scss";
+import Navbar from "../../components/navbar/Navbar";
 
 const Achievements = () => {
   return (
-    <div className='Achievements' id='ach'>Achievements</div>
-  )
-}
+    <>
+      <Navbar />
+      <div className="Achievements"></div>
+    </>
+  );
+};
 
-export default Achievements
+export default Achievements;

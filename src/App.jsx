@@ -14,10 +14,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Preloader />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/achievements" element={<Achievements />} />
+        <Route path="/skill" element={<Skills />} />
+        <Route path="/achievement" element={<Achievements />} />
         <Route path="/experience" element={<Experience />} />
-        <Route path="/projects" element={<Project />} />
+        <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

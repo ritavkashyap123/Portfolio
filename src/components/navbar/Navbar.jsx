@@ -4,13 +4,6 @@ import { Link } from 'react-router-dom'
 import "./navbar.scss"
 
 const Navbar = () => {
-
-  const handleClickScroll = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   
   return (
     <div className="Navbar">
@@ -36,10 +29,10 @@ const Navbar = () => {
           <Link to='/Experience' className="link" target='_block'>
             Experience
           </Link>
-          <Link to='/skills' className="link" target='_block'>
+          <Link to='/skill' className="link" target='_block'>
             Skills
           </Link>
-          <Link to='/achievements' className="link" target='_block'>
+          <Link to='/achievement' className="link" target='_block'>
             Achievements
           </Link>
           <Link to='/contact' className="link" target='_block'>

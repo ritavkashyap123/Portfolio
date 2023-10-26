@@ -1,11 +1,10 @@
 .Navbar {
-  z-index: 99;
   .nav {
     height: 3.5rem;
     width: 100%;
-    background-color: #00000030;
+    background-color: #141E22;
     border-bottom: 1px solid #d3d3d3;
-    position: fixed;
+    // position: fixed;
     .nav-header {
       cursor: pointer;
       display: inline;

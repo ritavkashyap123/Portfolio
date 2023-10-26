@@ -1,14 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import './contact.scss'
+import "./contact.scss";
+import Navbar from "../../components/navbar/Navbar";
 
 const Contact = () => {
-
   return (
-    <div className='Contact' id='cnt'>
-        Contact
-    </div>
-  )
-}
+    <>
+      <Navbar />
+      <div className="Contact"></div>
+    </>
+  );
+};
 
-export default Contact
+export default Contact;
