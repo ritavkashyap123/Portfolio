@@ -1,6 +1,6 @@
 .Navbar {
   .nav {
-    height: 3.5rem;
+    height: auto;
     width: 100%;
     background-color: #141e22;
     border-bottom: 1px solid #d3d3d3;
@@ -60,7 +60,7 @@
           align-items: center;
           font-size: 1.5rem;
           &:hover {
-            background-color: rgba(0, 0, 0, 0.3);
+            color: #41ffef;
           }
         }
       }
@@ -76,7 +76,7 @@
         left: 0px;
         .link {
           display: block;
-          width: 100%;
+          width: 90%;
         }
       }
       #nav-check:not(:checked) ~ .nav-links {
@@ -85,6 +85,7 @@
       #nav-check:checked ~ .nav-links {
         height: calc(25rem - 50px);
         overflow-y: auto;
+        z-index: 1000;
       }
     }
   }

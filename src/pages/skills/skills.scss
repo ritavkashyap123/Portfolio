@@ -2,8 +2,6 @@
 .Skills {
   height: 90vh;
   overflow-y: auto;
-  position: sticky;
-  top: 0;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -30,7 +28,7 @@
     align-items: center;
     flex-wrap: wrap;
     .card {
-      z-index: 5;
+      // z-index: 1;
       background: #001120;
       width: 30rem;
       height: 10rem;
@@ -49,14 +47,19 @@
         backdrop-filter: blur(10px); /* Add blur effect on hover */
       }
       .head {
-        font-family: "Times New Roman", Times, serif;
         width: 1rem;
         height: auto;
-        rotate: 270deg;
+        font-family: "Times New Roman", Times, serif;
+        transform: rotate(270deg);
         font-size: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .icon {
         font-size: 5rem;
@@ -78,10 +81,16 @@
         justify-content: center;
       }
     }
-    @media screen and (max-width: 600) {
-      .card {
-        width: 90%;
-      }
+  }
+  @media screen and (max-width:600px) {
+    .card {
+      height: auto;
+    }
+    .head {
+      font-size: 1rem;
+    }
+    .content {
+      font-size: 0.8rem;
     }
   }
 }
