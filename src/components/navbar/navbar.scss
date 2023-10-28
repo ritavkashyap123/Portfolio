@@ -2,7 +2,7 @@
   .nav {
     height: 3.5rem;
     width: 100%;
-    background-color: #141E22;
+    background-color: #141e22;
     border-bottom: 1px solid #d3d3d3;
     // position: fixed;
     .nav-header {
@@ -56,25 +56,29 @@
         top: 0px;
         label {
           display: inline-block;
-          width: 50px;
-          height: 50px;
+          width: 3rem;
+          height: auto;
           padding: 13px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5rem;
           &:hover {
             background-color: rgba(0, 0, 0, 0.3);
           }
-          span {
-            display: block;
-            width: 25px;
-            height: 10px;
-            border-top: 2px solid #eee;
-          }
+        //   span {
+        //     display: block;
+        //     width: 25px;
+        //     height: 10px;
+        //     border-top: 2px solid #eee;
+        //   }
         }
       }
       .nav-links {
         position: absolute;
         display: block;
         width: 100%;
-        background-color: #333;
+        background-color: #141e22;
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
@@ -89,7 +93,7 @@
         height: 0px;
       }
       #nav-check:checked ~ .nav-links {
-        height: calc(100vh - 50px);
+        height: calc(45vh - 50px);
         overflow-y: auto;
       }
     }

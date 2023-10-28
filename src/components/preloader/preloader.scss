@@ -6,7 +6,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     @keyframes blinker {
       0% {
         background-color: #00aeff;
@@ -32,7 +31,7 @@
     .skipbtn {
       border: 1px solid white;
       border-radius: 3px;
-      background: linear-gradient(to right, white 50%, #141E22 50%);
+      background: linear-gradient(to right, white 50%, #141e22 50%);
       background-size: 200% 100%;
       background-position: right bottom;
       transition: all 0.5s ease-out;
@@ -57,11 +56,11 @@
       }
     }
   }
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     .Preloader {
       font-size: 25px;
     }
-    .skipdiv{
+    .skipdiv {
       .skipbtn {
         .text {
           line-height: 1.5rem;
@@ -71,6 +70,5 @@
         }
       }
     }
-
   }
 }
