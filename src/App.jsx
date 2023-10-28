@@ -7,6 +7,7 @@ import Achievements from "./pages/achievements/Achievements";
 import Experience from "./pages/experience/Experience";
 import Project from "./pages/projects/Project";
 import Contact from "./pages/contact/Contact";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (

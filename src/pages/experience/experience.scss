@@ -83,8 +83,6 @@
   }
 
   .timeline-content {
-    // border: 1px solid white;
-    margin: 0rem 1rem;
     width: 95%;
     padding: 1rem 1.5rem;
     color: #ffffff;
@@ -136,7 +134,7 @@
     word-spacing: 1px;
     color: #888;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     .container:before {
       left: 8px;
       width: 2px;

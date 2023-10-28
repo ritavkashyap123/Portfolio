@@ -282,7 +282,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="head2">Documenatiion</div>
+        <div className="head2">Documentation</div>
         <div className="StackCard">
           <div className="card">
             <div className="head">OverLeaf</div>
@@ -330,7 +330,7 @@ const Skills = () => {
           <div className="card">
             <div className="head">AutoCad</div>
             <div className="icon">
-              <img src="src/assets/autocad.png" className="img" alt="Latex" />
+              <img src="src/assets/autocad.png" className="img" alt="AutoCAD" />
             </div>
             <div className="content">
               AutoCAD is a leading computer-aided design (CAD) software used for
@@ -344,7 +344,7 @@ const Skills = () => {
               <img
                 src="src/assets/solidworks.png"
                 className="img"
-                alt="Markdown"
+                alt="SolidWorks"
               />
             </div>
             <div className="content">
@@ -357,7 +357,7 @@ const Skills = () => {
           <div className="card">
             <div className="head">Blender</div>
             <div className="icon">
-              <img src="src/assets/blender.png" className="img" alt="MS Word" />
+              <img src="src/assets/blender.png" className="img" alt="Blender" />
             </div>
             <div className="content">
               Blender is a powerful open-source 3D creation suite, supporting
@@ -372,7 +372,7 @@ const Skills = () => {
           <div className="card">
             <div className="head">Matlab</div>
             <div className="icon">
-              <img src="src/assets/matlab.png" className="img" alt="Latex" />
+              <img src="src/assets/matlab.png" className="img" alt="Matlab" />
             </div>
             <div className="content">
               MATLAB is a high-level programming environment and language for
@@ -387,7 +387,7 @@ const Skills = () => {
               <img
                 src="src/assets/multisim.png"
                 className="img"
-                alt="Markdown"
+                alt="Multisim"
               />
             </div>
             <div className="content">
@@ -400,7 +400,7 @@ const Skills = () => {
           <div className="card">
             <div className="head">Proteus</div>
             <div className="icon">
-              <img src="src/assets/proteus.png" className="img" alt="MS Word" />
+              <img src="src/assets/proteus.png" className="img" alt="Proetus" />
             </div>
             <div className="content">
               Proteus is a widely used electronic design automation software,
@@ -412,7 +412,11 @@ const Skills = () => {
           <div className="card">
             <div className="head">Fritzing</div>
             <div className="icon">
-              <img src="src/assets/fritzing.png" className="img" alt="MS Word" />
+              <img
+                src="src/assets/fritzing.png"
+                className="img"
+                alt="Fritzing"
+              />
             </div>
             <div className="content">
               Fritzing is an open-source hardware initiative that simplifies
@@ -424,12 +428,24 @@ const Skills = () => {
           <div className="card">
             <div className="head">Arduino_IDE</div>
             <div className="icon">
-              <img src="src/assets/arduino.png" className="img" alt="MS Word" />
+              <img src="src/assets/arduino.png" className="img" alt="Arduino" />
             </div>
             <div className="content">
               Arduino IDE is an open-source software used to program Arduino
               boards. It provides a simple interface for writing code and
               uploading it to the board, making it accessible for beginners.
+            </div>
+          </div>
+          <div className="card">
+            <div className="head">Comsol</div>
+            <div className="icon">
+              <img src="src/assets/comsol.png" className="img" alt="Comsol" />
+            </div>
+            <div className="content">
+              COMSOL Multiphysics is a powerful simulation software used for
+              modeling and simulating physics-based systems. It enables
+              engineers and scientists to analyze and optimize complex
+              multiphysics phenomena for various applications.
             </div>
           </div>
         </div>

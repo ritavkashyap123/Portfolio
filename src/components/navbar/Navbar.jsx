@@ -16,29 +16,26 @@ const Navbar = () => {
         </div>
         <div className="nav-btn">
           <label htmlFor="nav-check">
-            {/* <span />
-            <span />
-            <span /> */}
             <FaBars />
           </label>
         </div>
         <div className="nav-links">
-          <Link to="/home" className="link" target="_block">
+          <Link to="/home" className="link">
             Home
           </Link>
-          <Link to="/project" className="link" target="_block">
+          <Link to="/project" className="link">
             Projects
           </Link>
-          <Link to="/Experience" className="link" target="_block">
+          <Link to="/experience" className="link">
             Experience
           </Link>
-          <Link to="/skill" className="link" target="_block">
+          <Link to="/skill" className="link">
             Skills
           </Link>
-          <Link to="/achievement" className="link" target="_block">
+          <Link to="/achievement" className="link">
             Achievements
           </Link>
-          <Link to="/contact" className="link" target="_block">
+          <Link to="/contact" className="link">
             Contact
           </Link>
         </div>
