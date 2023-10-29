@@ -50,7 +50,7 @@ const Experience = () => {
       <SocialIcons />
       <div className="Experience">
         <div className="head">
-          Experience 
+          Experience
           <div className="hr">
             <hr color="white" />
           </div>
@@ -80,11 +80,10 @@ const Experience = () => {
                 <div className="timeline-expanded-content">
                   {" "}
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Nulla omnis ea fugit tempore nemo possimus molestias magni
+                    expedita placeat dolore aspernatur dignissimos beatae harum
+                    quisquam aperiam cum blanditiis, vero debitis.
                   </p>
                   <button className="btn">Show Less</button>
                 </div>
@@ -111,11 +110,10 @@ const Experience = () => {
                 <div className="timeline-expanded-content">
                   {" "}
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptatem quis totam iusto eos adipisci suscipit? Est alias
+                    quaerat, cum voluptate hic pariatur repellendus quas
+                    distinctio? Quae reiciendis facere officia repudiandae.
                   </p>
                   <button className="btn">Show Less</button>
                 </div>
@@ -142,11 +140,10 @@ const Experience = () => {
                 <div className="timeline-expanded-content">
                   {" "}
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Laborum dolorem cupiditate, quibusdam vitae velit repellat
+                    nisi. Vitae nihil sequi quas consequuntur. Quo inventore
+                    nemo praesentium iusto laudantium quis ratione iste.
                   </p>
                   <button className="btn">Show Less</button>
                 </div>
@@ -173,11 +170,10 @@ const Experience = () => {
                 <div className="timeline-expanded-content">
                   {" "}
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur reiciendis veritatis hic non vitae? Quas a totam
+                    enim est perspiciatis voluptas nemo porro? Perferendis eos,
+                    omnis cum laudantium dolores doloribus?
                   </p>
                   <button className="btn">Show Less</button>
                 </div>
