@@ -1,35 +1,107 @@
-import React from "react";
+import React, {useEffect} from "react";
 import HeroRight from "../../components/hero-side/HeroRight";
 import "./hero.scss";
 
+// const ShootingStar = () => {
+//   return (
+//     <div className="shooting-star">
+//       <div className="star"></div>
+//     </div>
+//   );
+// };
+
+// Init Stats
+
 const Hero = () => {
+  useEffect(() => {
+    const canvas = document.querySelector("canvas");
+    const stats = new window.Stats();
+    stats.setMode(0);
+    stats.domElement.style.position = "absolute";
+    stats.domElement.style.left = "0px";
+    stats.domElement.style.top = "0px";
+    document.body.appendChild(stats.domElement);
+
+    const instantiate = (element, options) => {
+      const c = new window.Constellation(element, options);
+      c.init();
+    };
+
+    $("canvas").constellation({
+      star: {
+        width: 3,
+      },
+      line: {
+        color: "rgba(255, 255, 255, .5)",
+      },
+      length: window.innerWidth / 6,
+      radius: window.innerWidth / 5,
+    });
+
+    $window.on("resize", () => {
+      instantiate(canvas, {
+        star: {
+          width: 3,
+        },
+        line: {
+          color: "rgba(255, 255, 255, .5)",
+        },
+        length: window.innerWidth / 6,
+        radius: window.innerWidth / 5,
+      });
+    });
+
+    instantiate(canvas, {
+      star: {
+        width: 3,
+      },
+      line: {
+        color: "rgba(255, 255, 255, .5)",
+      },
+      length: window.innerWidth / 6,
+      radius: window.innerWidth / 5,
+    });
+
+    return () => {
+      window.cancelAnimationFrame(c.rAF);
+      $window.off("resize", instantiate);
+      stats.domElement.remove();
+    };
+  }, []); // Empty dependency array ensures that the effect runs once after the initial render
+
   return (
-    <div className="Hero">
-      <div className="hero-left">
-        <div>
-          Hi ! <span className="head">Ritav Here</span>
-          <br />
-          <span className="tagline">
-            A focused <span>UI/UX</span> designer and{" "}
-            <span>Frontend Developer</span>
-          </span>
-        </div>
-        <div className="hr">
-          <hr color="white" />
-        </div>
-        <div className="text">
-          I am a final year student of <span>Assam Engineering College</span>,
-          Persuing my <span>B.Tech</span> in{" "}
-          <span> Electronics and Telecommunication Engineering</span>. My
-          hometown is <span>Guwahati</span>. I do play with <span>Robots</span>{" "}
-          and <span>Electronics</span> staffs at my free time.{" "}
-          <span> Competitive Robotics </span> is one of my hobby. My other
-          hobbies are <span>Writing Poetry</span> in Assamese and{" "}
-          <span>Playing Valorant</span>.
-          <br />
-          <br />
-          <span className="span">Fun Fact:</span> I am addicted to <span>Chess</span> and <span>Web Series</span>
-          {/* <ul>
+    <>
+      <div className="Hero">
+      <canvas />;
+        {/* <div className="shooting-star">
+        <div className="star"></div>
+      </div> */}
+        <div className="hero-left">
+          <div>
+            Hi ! <span className="head">Ritav Here</span>
+            <br />
+            <span className="tagline">
+              A focused <span>UI/UX</span> designer and{" "}
+              <span>Frontend Developer</span>
+            </span>
+          </div>
+          <div className="hr">
+            <hr color="white" />
+          </div>
+          <div className="text">
+            I am a final year student of <span>Assam Engineering College</span>,
+            Persuing my <span>B.Tech</span> in{" "}
+            <span> Electronics and Telecommunication Engineering</span>. My
+            hometown is <span>Guwahati</span>. I do play with{" "}
+            <span>Robots</span> and <span>Electronics</span> staffs at my free
+            time. <span> Competitive Robotics </span> is one of my hobby. My
+            other hobbies are <span>Writing Poetry</span> in Assamese and{" "}
+            <span>Playing Valorant</span>.
+            <br />
+            <br />
+            <span className="span">Fun Fact:</span> I am addicted to{" "}
+            <span>Chess</span> and <span>Web Series</span>
+            {/* <ul>
             <li>
               I'm a final year Student of Assam Engineering College, Persuing my
               degree in <span>Electronics and Telecommunication Engineering</span>
@@ -42,12 +114,13 @@ const Hero = () => {
             <li>Learning backend in <span>Django</span> and <span>Flask</span></li>
             <li>Know the basics of <span>flutter</span> and <span>React-native</span> in the App dev section.</li>
           </ul> */}
+          </div>
+        </div>
+        <div className="hero-right">
+          <HeroRight />
         </div>
       </div>
-      <div className="hero-right">
-        <HeroRight />
-      </div>
-    </div>
+    </>
   );
 };
 

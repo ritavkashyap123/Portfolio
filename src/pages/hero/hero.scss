@@ -4,6 +4,36 @@
   justify-content: center;
   width: 90%;
   height: 90vh;
+  overflow: hidden;
+  // .shooting-star {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   width: 2px;
+  //   height: 2px;
+  //   background-color: white;
+  //   animation: shootingStarAnimation 1.5s ease-out infinite;
+  // }
+  
+  // .star {
+  //   position: absolute;
+  //   width: 6px;
+  //   height: 2px;
+  //   background-color: white;
+  //   transform: rotate(45deg);
+  // }
+  
+  // @keyframes shootingStarAnimation {
+  //   0% {
+  //     transform: translate(-100vw, -100vh) rotate(45deg);
+  //     opacity: 0;
+  //   }
+  //   100% {
+  //     transform: translate(100vw, 100vh) rotate(45deg);
+  //     opacity: 1;
+  //   }
+  // }
+
   .hero-left {
     color: #d3d3d3;
     display: flex;
