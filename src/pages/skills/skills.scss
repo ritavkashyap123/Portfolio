@@ -82,15 +82,12 @@
       }
     }
   }
-  @media screen and (max-width:600px) {
-    .card {
-      height: auto;
+  @media screen and (max-width: 600px) {
+    .StackCard {
+      display: none;
     }
-    .head {
-      font-size: 1rem;
-    }
-    .content {
-      font-size: 0.8rem;
+    .head2 {
+      display: none;
     }
   }
 }

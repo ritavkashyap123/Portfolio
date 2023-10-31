@@ -1,9 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto&family=Poppins&display=swap");
 
 body {
-    background: #111111;
-    color: white;
-    font-family: "Black Ops One";
-    margin: 0;
-    scroll-behavior: smooth;
+  background: #000;
+  color: white;
+  font-family: "Black Ops One";
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  animation: twinkle 1s infinite;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

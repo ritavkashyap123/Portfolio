@@ -7,11 +7,6 @@ import "./skills.scss";
 import { FaReact } from "react-icons/fa";
 
 const Skills = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e) => {
-    setPosition({ x: e.clientX, y: e.clientY });
-  };
   return (
     <>
       <Navbar />
@@ -25,11 +20,7 @@ const Skills = () => {
         </div>
         <div className="head2">Frontend Development stack</div>
         <div className="StackCard">
-          <div
-            className="card"
-            tyle={{ top: position.y, left: position.x }}
-            onMouseMove={handleMouseMove}
-          >
+          <div className="card">
             <div className="head">HTML</div>
             <div className="icon">
               <img

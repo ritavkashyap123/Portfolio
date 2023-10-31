@@ -1,7 +1,30 @@
 .Project {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 90vh;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   width: 90%;
+  //   height: 90vh;
+  body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  .shooting-star {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid white;
+  animation: moveShootingStar linear infinite;
+}
+
+@keyframes moveShootingStar {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
 }

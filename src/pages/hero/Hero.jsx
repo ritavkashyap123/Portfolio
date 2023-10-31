@@ -1,81 +1,12 @@
-import React, {useEffect} from "react";
+import React, { useEffect, useState } from "react";
 import HeroRight from "../../components/hero-side/HeroRight";
 import "./hero.scss";
 
-// const ShootingStar = () => {
-//   return (
-//     <div className="shooting-star">
-//       <div className="star"></div>
-//     </div>
-//   );
-// };
-
-// Init Stats
-
 const Hero = () => {
-  useEffect(() => {
-    const canvas = document.querySelector("canvas");
-    const stats = new window.Stats();
-    stats.setMode(0);
-    stats.domElement.style.position = "absolute";
-    stats.domElement.style.left = "0px";
-    stats.domElement.style.top = "0px";
-    document.body.appendChild(stats.domElement);
-
-    const instantiate = (element, options) => {
-      const c = new window.Constellation(element, options);
-      c.init();
-    };
-
-    $("canvas").constellation({
-      star: {
-        width: 3,
-      },
-      line: {
-        color: "rgba(255, 255, 255, .5)",
-      },
-      length: window.innerWidth / 6,
-      radius: window.innerWidth / 5,
-    });
-
-    $window.on("resize", () => {
-      instantiate(canvas, {
-        star: {
-          width: 3,
-        },
-        line: {
-          color: "rgba(255, 255, 255, .5)",
-        },
-        length: window.innerWidth / 6,
-        radius: window.innerWidth / 5,
-      });
-    });
-
-    instantiate(canvas, {
-      star: {
-        width: 3,
-      },
-      line: {
-        color: "rgba(255, 255, 255, .5)",
-      },
-      length: window.innerWidth / 6,
-      radius: window.innerWidth / 5,
-    });
-
-    return () => {
-      window.cancelAnimationFrame(c.rAF);
-      $window.off("resize", instantiate);
-      stats.domElement.remove();
-    };
-  }, []); // Empty dependency array ensures that the effect runs once after the initial render
 
   return (
     <>
-      <div className="Hero">
-      <canvas />;
-        {/* <div className="shooting-star">
-        <div className="star"></div>
-      </div> */}
+      <div className="Hero" >
         <div className="hero-left">
           <div>
             Hi ! <span className="head">Ritav Here</span>
