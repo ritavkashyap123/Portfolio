@@ -1,10 +1,74 @@
 import React, { useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import SocialIcons from "../../components/socialIcons/SocialIcons";
+// import { BallCanvas } from "../../components/balls/Ball";
 
 import "./skills.scss";
 
 import { FaReact } from "react-icons/fa";
+
+const frontend = [
+  {
+    head: "HTML",
+    icon: "src/assets/html.png",
+    content: "abc",
+  },
+  {
+    head: "css",
+    icon: "src/assets/html.png",
+    content: "abc",
+  },
+];
+
+const programming = [
+  {
+    head: "HTML",
+    icon: "src/assets/html.png",
+    content: "abc",
+  },
+];
+const design = [
+  {
+    head: "HTML",
+    icon: "src/assets/html.png",
+    content: "abc",
+  },
+];
+const appDev = [
+  {
+    head: "HTML",
+    icon: "src/assets/html.png",
+    content: "abc",
+  },
+];
+const operatingSystem = [
+  {
+    head: "HTML",
+    icon: "src/assets/html.png",
+    content: "abc",
+  },
+];
+const documentation = [
+  {
+    head: "HTML",
+    icon: "src/assets/html.png",
+    content: "abc",
+  },
+];
+const threeDesign = [
+  {
+    head: "HTML",
+    icon: "src/assets/html.png",
+    content: "abc",
+  },
+];
+const electroSoft = [
+  {
+    head: "HTML",
+    icon: "src/assets/html.png",
+    content: "abc",
+  },
+];
 
 const Skills = () => {
   return (
@@ -20,22 +84,26 @@ const Skills = () => {
         </div>
         <div className="head2">Frontend Development stack</div>
         <div className="StackCard">
-          <div className="card">
-            <div className="head">HTML</div>
-            <div className="icon">
-              <img
-                src="src/assets/html.png"
-                alt="HTML"
-                style={{ width: "7rem" }}
-              />
-            </div>
-            <div className="content">
-              HTML (HyperText Markup Language) is the standard language for
+          {" "}
+          {frontend.map((e) => (
+            <div className="card">
+              <div className="head">{e.head}</div>
+              <div className="icon">
+                <img
+                  src={e.icon}
+                  alt="HTML"
+                  style={{ width: "7rem" }}
+                />
+              </div>
+              <div className="content">
+                {/* HTML (HyperText Markup Language) is the standard language for
               creating web pages and web applications. It structures content
-              using elements, defining their layout and appearance in browsers.
+              using elements, defining their layout and appearance in browsers. */}
+                {e.content}
+              </div>
             </div>
-          </div>
-          <div className="card">
+          ))}
+          {/* <div className="card">
             <div className="head">CSS</div>
             <div className="icon">
               <img src="src/assets/css.png" alt="CSS" className="img" />
@@ -107,8 +175,9 @@ const Skills = () => {
               users to create professional websites without coding expertise,
               catering to diverse online needs.
             </div>
-          </div>
+          </div> */}
         </div>
+
         <div className="head2">Programming Language</div>
         <div className="StackCard">
           <div className="card">
