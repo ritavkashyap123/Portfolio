@@ -80,22 +80,21 @@
         align-items: center;
         justify-content: center;
       }
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .StackCard {
-      //   display: none;
-
-      .card {
-        height: auto;
-        .content {
-          font-size: 0.8rem;
-          display: none;
-        }
+      @media screen and (max-width: 600px) {
+        display: none;
       }
     }
-    .head2 {
-      font-size: 1.5rem;
+    .icon2 {
+      font-size: 5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      .img {
+        width: 5rem;
+        height: auto;
+      }
     }
   }
 }
