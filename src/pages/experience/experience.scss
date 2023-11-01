@@ -85,6 +85,7 @@
     padding: 1rem 1.5rem;
     color: #ffffff;
     cursor: pointer;
+    transition: 1s all;
   }
   
   .details {
@@ -112,6 +113,10 @@
     background: none;
     color: white;
     cursor: pointer;
+  }
+
+  .timeline-expanded-content {
+    transition: 1s all;
   }
 
   .timeline-content h3 {

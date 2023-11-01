@@ -3,10 +3,50 @@
   .Preloader {
     font-size: 40px;
     height: 90vh;
-    width: auto;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    .rocket {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translatey(100%);
+      border-radius: 10px 10px 0 0;
+      animation: moveRocketH 19s linear infinite;
+      animation-iteration-count: 1;
+    }
+    .hr {
+      width: 1rem;
+      animation: tail 19s linear infinite;
+      animation-iteration-count: 1;
+    }
+  
+    @keyframes moveRocketH {
+      0% {
+        transform: translateX(-50vw) translateY(-90vh);
+      }
+      100% {
+        transform: translateX(50vw) translateY(-90vh);
+      }
+    }
+    @keyframes moveRocketV {
+      0% {
+        transform: translateX(-50vw) translateY(0vh);
+      }
+      100% {
+        transform: translateX(50vw) translateY(-90vh);
+      }
+    }
+    @keyframes tail {
+      0% {
+        width: 0vw;
+      }
+      100% {
+        width: 20vw;
+      }
+    }
     @keyframes blinker {
       0% {
         background-color: #00aeff;
@@ -32,7 +72,7 @@
     .skipbtn {
       border: 1px solid white;
       border-radius: 3px;
-      background: linear-gradient(to right, white 50%, #141e22 50%);
+      background: linear-gradient(to right, white 50%, #00000000 50%);
       background-size: 200% 100%;
       background-position: right bottom;
       transition: all 0.5s ease-out;

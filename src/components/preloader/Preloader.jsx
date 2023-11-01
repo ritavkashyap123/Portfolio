@@ -1,12 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import Typewriter from "typewriter-effect";
-
+import { BsRocket } from "react-icons/bs";
 import { FcNext } from "react-icons/fc";
 import "./preloader.scss";
 import { useNavigate } from "react-router-dom";
 
 const Preloader = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const rocketElement = document.querySelector('.rocket');
+
+    const handleAnimationEnd = () => {
+      // Navigate to home page after the animation ends
+      navigate('/home');
+    };
+
+    rocketElement.addEventListener('animationend', handleAnimationEnd);
+
+    return () => {
+      // Clean up the event listener on component unmount
+      rocketElement.removeEventListener('animationend', handleAnimationEnd);
+    };
+  }, [navigate]);
 
   return (
     <div className="startPage">
@@ -30,10 +46,13 @@ const Preloader = () => {
             pauseFor: 200,
             deleteSpeed: 15,
             autoStart: true,
-            loop: true,
             // devMode: true
           }}
         />
+        <div className="rocket">
+          <hr className="hr"/>
+          <BsRocket style={{rotate:"90deg"}}/>
+        </div>
       </div>
       <div className="skipdiv">
         <div className="skipbtn">

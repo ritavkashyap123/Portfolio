@@ -24,17 +24,17 @@ const HeroModel = () => {
 
 const HeroRight = () => {
 
-  const [canvasStyle, setCanvasStyle] = useState({ height: "60vh" });
+  const [canvasStyle, setCanvasStyle] = useState();
   const [cameraPosition, setCameraPosition] = useState([2, 2, 2]);
 
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      if (width > 1400) {
-        setCanvasStyle({ height: "60vh" });
+      if (width > 1200) {
+        setCanvasStyle({ height: "70vh" });
         setCameraPosition([2, 2, 2]);
       } else {
-        setCanvasStyle({ height: "60vh" });
+        setCanvasStyle({ height: "45vh" });
         setCameraPosition([3, 3, 3]);
       }
     };

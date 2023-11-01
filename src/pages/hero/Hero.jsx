@@ -11,10 +11,10 @@ const Hero = () => {
           <div>
             Hi ! <span className="head">Ritav Here</span>
             <br />
-            <span className="tagline">
+            <div className="tagline">
               A focused <span>UI/UX</span> designer and{" "}
               <span>Frontend Developer</span>
-            </span>
+            </div>
           </div>
           <div className="hr">
             <hr color="white" />
