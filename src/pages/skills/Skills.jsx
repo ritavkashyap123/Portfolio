@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import SocialIcons from "../../components/socialIcons/SocialIcons";
 // import { BallCanvas } from "../../components/balls/Ball";

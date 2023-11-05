@@ -50,7 +50,7 @@ const Preloader = () => {
           }}
         />
         <div className="rocket">
-          <hr className="hr"/>
+          <hr className="hr" style={{color:"red"}}/>
           <BsRocket style={{rotate:"90deg"}}/>
         </div>
       </div>
