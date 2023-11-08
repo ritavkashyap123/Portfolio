@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-      <div id="stars-container">
+      <div>
         {stars.map((star, index) => (
           <Star
             key={index}
