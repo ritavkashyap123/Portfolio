@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import HeroRight from "../../components/hero-side/HeroRight";
+import HeroRight from "../../components/models/HeroRight";
 import "./hero.scss";
 
 const Hero = () => {

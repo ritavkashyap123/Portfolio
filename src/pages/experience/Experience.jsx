@@ -75,14 +75,28 @@ const Experience = () => {
               {!isOpen6 && <button className="btn">Show More</button>}
               {isOpen6 && (
                 <div className="timeline-expanded-content">
-                  {" "}
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate.
-                  </p>
+                  <div>
+                    Here I first developed a wordpress site with student and
+                    company dashboard and hosted in hostinger. Later we formed a
+                    technical team consist of three parts,{" "}
+                    <ul>
+                      {" "}
+                      <li>The UI/UX Team</li>
+                      <li>The Frontend Team</li>
+                      <li>The Backend Team</li>
+                    </ul>
+                    And started working on the full-stack site of Frint in MERN.
+                    <br />
+                    Website link:
+                    <a
+                      href="https://frint.in"
+                      className="link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      frint.in
+                    </a>
+                  </div>
                   <button className="btn">Show Less</button>
                 </div>
               )}
@@ -106,13 +120,21 @@ const Experience = () => {
               {!isOpen4 && <button className="btn">Show More</button>}
               {isOpen4 && (
                 <div className="timeline-expanded-content">
-                  {" "}
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequatur reiciendis veritatis hic non vitae? Quas a totam
-                    enim est perspiciatis voluptas nemo porro? Perferendis eos,
-                    omnis cum laudantium dolores doloribus?
-                  </p>
+                  <div>
+                    Here I first made a prototype of ODDS (Optical Drone
+                    Detection System) in Figma. After confirming the design I
+                    exactly made the Frontend of the Dashboard using ReactJS.
+                    This internship was done under the guidance of Mr. Atul
+                    Rawat Sir. <br />
+                    <a
+                      href="https://drive.google.com/drive/folders/18DSox5DJmF5Ghgi3yWaCnZy0T9BV3xGW?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link"
+                    >
+                      Certificate
+                    </a>
+                  </div>
                   <button className="btn">Show Less</button>
                 </div>
               )}
@@ -137,12 +159,40 @@ const Experience = () => {
               {isOpen3 && (
                 <div className="timeline-expanded-content">
                   {" "}
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Laborum dolorem cupiditate, quibusdam vitae velit repellat
-                    nisi. Vitae nihil sequi quas consequuntur. Quo inventore
-                    nemo praesentium iusto laudantium quis ratione iste.
-                  </p>
+                  <div>
+                    Here we had to develop a live air quality monitoring system.
+                    It was an IoT project. This internship consists of two
+                    parts-
+                    <ul>
+                      <li>
+                        <span className="span">Hardware:</span> In the hardware
+                        part, we used ESP8266 as processor; MQ-9 & MQ-135 for
+                        quantity of different gases in air; BME280 sensor for
+                        meteorological data and Dust sensor for AQI measurement.
+                        Here we used I2C and SPI protocol for master-slave
+                        configuration of sensors with ESP and send the data
+                        through HTTP post request.
+                      </li>
+                      <li>
+                        <span className="span">Software:</span> The software
+                        part is consists of a portfolio website and a portal
+                        where the data taken from the sensor displayed. The
+                        stacks used in portfolio is HTML and CSS. The fronted of
+                        the Portal was made in ReactJs Material UI while the
+                        backend was made in Django REST Framework. The data
+                        fetched in the backend using REST API. <br />
+                        Website Link:
+                        <a
+                          href="https:\\apusensor.net"
+                          className="link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          apusensor.net
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                   <button className="btn">Show Less</button>
                 </div>
               )}
@@ -167,12 +217,20 @@ const Experience = () => {
               {isOpen2 && (
                 <div className="timeline-expanded-content">
                   {" "}
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Voluptatem quis totam iusto eos adipisci suscipit? Est alias
-                    quaerat, cum voluptate hic pariatur repellendus quas
-                    distinctio? Quae reiciendis facere officia repudiandae.
-                  </p>
+                  <div>
+                    Here I designed and developed the Adamomedia website. Apart
+                    from that I also managed the blog posts and regularly
+                    uploaded posts written by the content team.
+                    <br />
+                    <a
+                      href="https://www.instagram.com/adamomedia.in/"
+                      className="link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      adamomedia.in
+                    </a>
+                  </div>
                   <button className="btn">Show Less</button>
                 </div>
               )}
@@ -200,12 +258,20 @@ const Experience = () => {
               {isOpen1 && (
                 <div className="timeline-expanded-content">
                   {" "}
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nulla omnis ea fugit tempore nemo possimus molestias magni
-                    expedita placeat dolore aspernatur dignissimos beatae harum
-                    quisquam aperiam cum blanditiis, vero debitis.
-                  </p>
+                  <div>
+                    Here I managed the website and made graphic design for each
+                    and every post. Moreover we successfully orgaised a state
+                    level "open-letter writing competiton"
+                    <br />
+                    <a
+                      href="https://www.instagram.com/blogbug.assamese/"
+                      className="link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      assamese.teamblogbug.com
+                    </a>
+                  </div>
                   <button className="btn">Show Less</button>
                 </div>
               )}
@@ -234,13 +300,13 @@ const Experience = () => {
               {isOpen5 && (
                 <div className="timeline-expanded-content">
                   {" "}
-                  <p>
+                  <div>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate.
-                  </p>
+                  </div>
                   <button className="btn">Show Less</button>
                 </div>
               )}
@@ -268,13 +334,13 @@ const Experience = () => {
               {isOpen7 && (
                 <div className="timeline-expanded-content">
                   {" "}
-                  <p>
+                  <div>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate.
-                  </p>
+                  </div>
                   <button className="btn">Show Less</button>
                 </div>
               )}
@@ -302,13 +368,13 @@ const Experience = () => {
               {isOpen8 && (
                 <div className="timeline-expanded-content">
                   {" "}
-                  <p>
+                  <div>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate.
-                  </p>
+                  </div>
                   <button className="btn">Show Less</button>
                 </div>
               )}
@@ -336,13 +402,13 @@ const Experience = () => {
               {isOpen9 && (
                 <div className="timeline-expanded-content">
                   {" "}
-                  <p>
+                  <div>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate.
-                  </p>
+                  </div>
                   <button className="btn">Show Less</button>
                 </div>
               )}

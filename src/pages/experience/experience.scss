@@ -86,8 +86,18 @@
     color: #ffffff;
     cursor: pointer;
     transition: 1s all;
+    h3 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 25px;
+      font-weight: 500;
+    }
+    .span {
+      font-size: 16px;
+      color: #41ffef;
+    }
   }
-  
+
   .details {
     display: flex;
   }
@@ -116,27 +126,32 @@
   }
 
   .timeline-expanded-content {
-    transition: 1s all;
+    max-height: 0;
+    overflow: hidden;
+    animation: expandTimeline 3s ease-out forwards; /* Adjust the duration and timing function as needed */
+    @keyframes expandTimeline {
+      from {
+        max-height: 0;
+      }
+
+      to {
+        max-height: 1000px; /* Adjust the maximum height based on your content */
+      }
+    }
+    .link {
+      color: #00aeff;
+      text-decoration: none;
+    }
+    div {
+      font-family: monospace;
+      font-weight: 700;
+      font-size: 0.9rem;
+      line-height: 1.5em;
+      word-spacing: 1px;
+      color: #d3d3d3;
+    }
   }
 
-  .timeline-content h3 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 25px;
-    font-weight: 500;
-  }
-
-  .timeline-content .span {
-    font-size: 16px;
-    color: #41ffef;
-  }
-
-  .timeline-content p {
-    font-size: 14px;
-    line-height: 1.5em;
-    word-spacing: 1px;
-    color: #888;
-  }
   @media screen and (max-width: 1000px) {
     .container:before {
       left: 8px;

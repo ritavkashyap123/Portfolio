@@ -1,7 +1,34 @@
 .Contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 90vh;
+  .box {
+    background-color: red;
+    border-radius: 20px;
+    height: 70vh;
+    width: 60vw;
+    text-align: center;
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .left {
+        // flex-direction: column;
+        width: 50%;
+        .name {
+            width: 100%;
+            background: none;
+            border: none;
+        }
+      }
+      .right {
+        width: 50%;
+      }
+      @media (max-width: 800px) {
+        flex-direction: column;
+      }
+    }
+  }
 }
