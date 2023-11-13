@@ -1,31 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import { BsRocket } from "react-icons/bs";
 import { FcNext } from "react-icons/fc";
 import "./preloader.scss";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Preloader = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const rocketElement = document.querySelector('.rocket');
+    const rocketElement = document.querySelector(".rocket");
 
     const handleAnimationEnd = () => {
       // Navigate to home page after the animation ends
-      navigate('/home');
+      navigate("/home");
     };
 
-    rocketElement.addEventListener('animationend', handleAnimationEnd);
+    rocketElement.addEventListener("animationend", handleAnimationEnd);
 
     return () => {
       // Clean up the event listener on component unmount
-      rocketElement.removeEventListener('animationend', handleAnimationEnd);
+      rocketElement.removeEventListener("animationend", handleAnimationEnd);
     };
   }, [navigate]);
 
   return (
-    <div className="startPage">
+    <motion.div
+      className="startPage"
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      exit={{ scale: 1 }}
+    >
       <div className="Preloader">
         <Typewriter
           options={{
@@ -50,8 +56,8 @@ const Preloader = () => {
           }}
         />
         <div className="rocket">
-          <hr className="hr" style={{color:"red"}}/>
-          <BsRocket style={{rotate:"90deg"}}/>
+          <hr className="hr" style={{ color: "red" }} />
+          <BsRocket style={{ rotate: "90deg" }} />
         </div>
       </div>
       <div className="skipdiv">
@@ -61,7 +67,7 @@ const Preloader = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

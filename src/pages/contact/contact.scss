@@ -1,34 +1,151 @@
 .Contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90vw;
+  overflow-y: auto;
+  width: 100vw;
   height: 90vh;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .head {
+    text-align: start;
+    margin: 1rem 2rem;
+    font-size: 2.5rem;
+    color: #ffffff;
+    .hr {
+      width: 10%;
+    }
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   .box {
-    background-color: red;
+    // background-color: #111111bb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
     height: 70vh;
     width: 60vw;
-    text-align: center;
     .content {
+      height: 60vh;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       .left {
-        // flex-direction: column;
         width: 50%;
-        .name {
-            width: 100%;
-            background: none;
-            border: none;
+        .input-group {
+          margin: 2rem;
+          font-size: 1.25rem;
+          position: relative;
+          --primary: #2196f3;
+          .input {
+            text-align: start;
+            all: unset;
+            width: 90%;
+            color: #fefefe;
+            padding: 1rem;
+            border: 1px solid #9e9e9e;
+            border-radius: 10px;
+            transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            &:focus {
+              border: 1px solid var(--primary);
+            }
+          }
+          .label {
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+            color: #d4d4d4;
+            pointer-events: none;
+            transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          .input:is(:focus, :valid) ~ label {
+            transform: translateY(-120%) scale(0.7);
+            background-color: #000;
+            padding-inline: 0.3rem;
+            color: var(--primary);
+          }
+        }
+        @media (max-width: 1000px) {
+          margin-top: 15rem;
+        }
+
+        .btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .submit {
+            margin: 1rem;
+            border: 1px solid white;
+            border-radius: 10px;
+            background: linear-gradient(
+              to right,
+              rgb(85, 231, 85) 50%,
+              #00000000 50%
+            );
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all 0.5s ease-out;
+            cursor: pointer;
+            &:hover {
+              background-position: left bottom;
+            }
+          }
+          .reset {
+            margin: 1rem;
+            border: 1px solid white;
+            border-radius: 10px;
+            background: linear-gradient(
+              to right,
+              rgb(228, 63, 63) 50%,
+              #00000000 50%
+            );
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all 0.5s ease-out;
+            cursor: pointer;
+            &:hover {
+              background-position: left bottom;
+            }
+          }
+          .text {
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+              sans-serif;
+            text-align: center;
+            padding: 0.5rem 1rem;
+            font-size: 16px;
+            line-height: 2rem;
+            color: white;
+            transition: all 0.6s ease-out;
+            width: 7rem;
+            &:hover {
+              color: black;
+            }
+          }
         }
       }
       .right {
         width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      @media (max-width: 800px) {
+      @media (max-width: 1000px) {
         flex-direction: column;
+        .right {
+          width: 90%;
+        }
+        .left {
+          width: 90%;
+        }
       }
     }
+    @media (max-width: 1000px) {
+      width: 100vw;
+    }
   }
+}
+
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaStopwatch, FaMapMarkerAlt } from "react-icons/fa";
 import Navbar from "../../components/navbar/Navbar";
+import { motion } from "framer-motion";
 
 import "./experience.scss";
 import SocialIcons from "../../components/socialIcons/SocialIcons";
@@ -48,7 +49,12 @@ const Experience = () => {
     <>
       <Navbar />
       <SocialIcons />
-      <div className="Experience">
+      <motion.div
+        className="Experience"
+        initial={{ translateX: "-100vw" }}
+        animate={{ translateX: 0 }}
+        exit={{ translateX: "100vw" }}
+      >
         <div className="head">
           Experience
           <div className="hr">
@@ -415,7 +421,7 @@ const Experience = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

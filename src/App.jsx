@@ -1,13 +1,7 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Preloader from "./components/preloader/Preloader";
-import Home from "./pages/home/Home";
-import Skills from "./pages/skills/Skills";
-import Achievements from "./pages/achievements/Achievements";
-import Experience from "./pages/experience/Experience";
-import Project from "./pages/projects/Project";
-import Contact from "./pages/contact/Contact";
-import react, { useEffect, useState } from 'react';
+import { HashRouter } from "react-router-dom";
+import { useEffect, useState } from "react";
+import AnimateRoutes from "./components/animation/AnimateRoutes";
 
 const Star = ({ left, top, duration }) => {
   const style = {
@@ -45,17 +39,9 @@ function App() {
             duration={star.duration}
           />
         ))}
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Preloader />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/skill" element={<Skills />} />
-            <Route path="/achievement" element={<Achievements />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/project" element={<Project />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </BrowserRouter>
+        <HashRouter>
+          <AnimateRoutes />
+        </HashRouter>
       </div>
     </>
   );

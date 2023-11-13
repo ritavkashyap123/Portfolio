@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import SocialIcons from "../../components/socialIcons/SocialIcons";
+import { motion } from "framer-motion";
 // import { BallCanvas } from "../../components/balls/Ball";
 
 import "./skills.scss";
@@ -221,7 +222,12 @@ const Skills = () => {
     <>
       <Navbar />
       <SocialIcons />
-      <div className="Skills">
+      <motion.div
+        className="Skills"
+        initial={{ translateX: "-100vw" }}
+        animate={{ translateX: 0 }}
+        exit={{ translateX: "100vw" }}
+      >
         <div className="head">
           Skills
           <div className="hr">
@@ -373,7 +379,7 @@ const Skills = () => {
               </div>
             ))}
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
