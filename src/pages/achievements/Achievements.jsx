@@ -6,16 +6,12 @@ import SocialIcons from "../../components/socialIcons/SocialIcons";
 
 const Achievements = () => {
   return (
-    <>
-      <Navbar />
-      <SocialIcons />
-      <motion.div
-        className="Achievements"
-        initial={{ translateX: "-100vw" }}
-        animate={{ translateX: 0 }}
-        exit={{ translateX: "100vw" }}
-      ></motion.div>
-    </>
+    <motion.div
+      className="Achievements"
+      initial={{ translateX: "-100vw" }}
+      animate={{ translateX: 0 }}
+      exit={{ translateX: "100vw" }}
+    ></motion.div>
   );
 };
 

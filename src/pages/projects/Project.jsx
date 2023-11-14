@@ -6,18 +6,14 @@ import SocialIcons from "../../components/socialIcons/SocialIcons";
 
 const Project = () => {
   return (
-    <>
-      <Navbar />
-      <SocialIcons />
-      <motion.div
-        className="Project"
-        initial={{ translateX: "-100vw" }}
-        animate={{ translateX: 0 }}
-        exit={{ translateX: "100vw" }}
-      >
-        ABC
-      </motion.div>
-    </>
+    <motion.div
+      className="Project"
+      initial={{ translateX: "-100vw" }}
+      animate={{ translateX: 0 }}
+      exit={{ translateX: "100vw" }}
+    >
+      ABC
+    </motion.div>
   );
 };
 

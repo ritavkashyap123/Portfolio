@@ -219,168 +219,164 @@ const Skills = () => {
   }, []);
 
   return (
-    <>
-      <Navbar />
-      <SocialIcons />
-      <motion.div
-        className="Skills"
-        initial={{ translateX: "-100vw" }}
-        animate={{ translateX: 0 }}
-        exit={{ translateX: "100vw" }}
-      >
-        <div className="head">
-          Skills
-          <div className="hr">
-            <hr color="white" />
+    <motion.div
+      className="Skills"
+      initial={{ translateX: "-100vw" }}
+      animate={{ translateX: 0 }}
+      exit={{ translateX: "100vw" }}
+    >
+      <div className="head">
+        Skills
+        <div className="hr">
+          <hr color="white" />
+        </div>
+      </div>
+      <div className="head2">Frontend Development stack</div>
+      <div className="StackCard">
+        {" "}
+        {frontend.map((e) => (
+          <div className="card" key={e.head}>
+            <div className="head">{e.head}</div>
+            <div className="icon">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
+            </div>
+            <div className="content">{e.content}</div>
           </div>
-        </div>
-        <div className="head2">Frontend Development stack</div>
-        <div className="StackCard">
-          {" "}
-          {frontend.map((e) => (
-            <div className="card" key={e.head}>
-              <div className="head">{e.head}</div>
-              <div className="icon">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-              <div className="content">{e.content}</div>
+        ))}
+        {isMobile &&
+          frontend.map((e) => (
+            <div className="icon2">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
             </div>
           ))}
-          {isMobile &&
-            frontend.map((e) => (
-              <div className="icon2">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-            ))}
-        </div>
-        <div className="head2">Programming Language</div>
-        <div className="StackCard">
-          {programming.map((e) => (
-            <div className="card" key={e.head}>
-              <div className="head">{e.head}</div>
-              <div className="icon">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-              <div className="content">{e.content}</div>
+      </div>
+      <div className="head2">Programming Language</div>
+      <div className="StackCard">
+        {programming.map((e) => (
+          <div className="card" key={e.head}>
+            <div className="head">{e.head}</div>
+            <div className="icon">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
+            </div>
+            <div className="content">{e.content}</div>
+          </div>
+        ))}
+        {isMobile &&
+          programming.map((e) => (
+            <div className="icon2">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
             </div>
           ))}
-          {isMobile &&
-            programming.map((e) => (
-              <div className="icon2">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-            ))}
-        </div>
-        <div className="head2">Designing</div>
-        <div className="StackCard">
-          {design.map((e) => (
-            <div className="card" key={e.head}>
-              <div className="head">{e.head}</div>
-              <div className="icon">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-              <div className="content">{e.content}</div>
+      </div>
+      <div className="head2">Designing</div>
+      <div className="StackCard">
+        {design.map((e) => (
+          <div className="card" key={e.head}>
+            <div className="head">{e.head}</div>
+            <div className="icon">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
+            </div>
+            <div className="content">{e.content}</div>
+          </div>
+        ))}
+        {isMobile &&
+          design.map((e) => (
+            <div className="icon2">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
             </div>
           ))}
-          {isMobile &&
-            design.map((e) => (
-              <div className="icon2">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-            ))}
-        </div>
-        <div className="head2">App Development stack</div>
-        <div className="StackCard">
-          {appDev.map((e) => (
-            <div className="card" key={e.head}>
-              <div className="head">{e.head}</div>
-              <div className="icon">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-              <div className="content">{e.content}</div>
+      </div>
+      <div className="head2">App Development stack</div>
+      <div className="StackCard">
+        {appDev.map((e) => (
+          <div className="card" key={e.head}>
+            <div className="head">{e.head}</div>
+            <div className="icon">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
+            </div>
+            <div className="content">{e.content}</div>
+          </div>
+        ))}
+        {isMobile &&
+          appDev.map((e) => (
+            <div className="icon2">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
             </div>
           ))}
-          {isMobile &&
-            appDev.map((e) => (
-              <div className="icon2">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-            ))}
-        </div>
-        <div className="head2">Operating Systems</div>
-        <div className="StackCard">
-          {operatingSystem.map((e) => (
-            <div className="card" key={e.head}>
-              <div className="head">{e.head}</div>
-              <div className="icon">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-              <div className="content">{e.content}</div>
+      </div>
+      <div className="head2">Operating Systems</div>
+      <div className="StackCard">
+        {operatingSystem.map((e) => (
+          <div className="card" key={e.head}>
+            <div className="head">{e.head}</div>
+            <div className="icon">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
+            </div>
+            <div className="content">{e.content}</div>
+          </div>
+        ))}
+        {isMobile &&
+          operatingSystem.map((e) => (
+            <div className="icon2">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
             </div>
           ))}
-          {isMobile &&
-            operatingSystem.map((e) => (
-              <div className="icon2">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-            ))}
-        </div>
-        <div className="head2">Documentation</div>
-        <div className="StackCard">
-          {documentation.map((e) => (
-            <div className="card" key={e.head}>
-              <div className="head">{e.head}</div>
-              <div className="icon">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-              <div className="content">{e.content}</div>
+      </div>
+      <div className="head2">Documentation</div>
+      <div className="StackCard">
+        {documentation.map((e) => (
+          <div className="card" key={e.head}>
+            <div className="head">{e.head}</div>
+            <div className="icon">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
+            </div>
+            <div className="content">{e.content}</div>
+          </div>
+        ))}
+        {isMobile &&
+          documentation.map((e) => (
+            <div className="icon2">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
             </div>
           ))}
-          {isMobile &&
-            documentation.map((e) => (
-              <div className="icon2">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-            ))}
-        </div>
-        <div className="head2">3D Designing Platform</div>
-        <div className="StackCard">
-          {threeDesign.map((e) => (
-            <div className="card" key={e.head}>
-              <div className="head">{e.head}</div>
-              <div className="icon">
-                <img src={e.icon} alt={e.head} style={{ width: "7rem" }} />
-              </div>
-              <div className="content">{e.content}</div>
+      </div>
+      <div className="head2">3D Designing Platform</div>
+      <div className="StackCard">
+        {threeDesign.map((e) => (
+          <div className="card" key={e.head}>
+            <div className="head">{e.head}</div>
+            <div className="icon">
+              <img src={e.icon} alt={e.head} style={{ width: "7rem" }} />
+            </div>
+            <div className="content">{e.content}</div>
+          </div>
+        ))}
+        {isMobile &&
+          threeDesign.map((e) => (
+            <div className="icon2">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
             </div>
           ))}
-          {isMobile &&
-            threeDesign.map((e) => (
-              <div className="icon2">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-            ))}
-        </div>
-        <div className="head2">Electronics Software</div>
-        <div className="StackCard">
-          {electroSoft.map((e) => (
-            <div className="card" key={e.head}>
-              <div className="head">{e.head}</div>
-              <div className="icon">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-              <div className="content">{e.content}</div>
+      </div>
+      <div className="head2">Electronics Software</div>
+      <div className="StackCard">
+        {electroSoft.map((e) => (
+          <div className="card" key={e.head}>
+            <div className="head">{e.head}</div>
+            <div className="icon">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
+            </div>
+            <div className="content">{e.content}</div>
+          </div>
+        ))}
+        {isMobile &&
+          electroSoft.map((e) => (
+            <div className="icon2">
+              <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
             </div>
           ))}
-          {isMobile &&
-            electroSoft.map((e) => (
-              <div className="icon2">
-                <img src={e.icon} alt={e.head} style={{ width: "5rem" }} />
-              </div>
-            ))}
-        </div>
-      </motion.div>
-    </>
+      </div>
+    </motion.div>
   );
 };
 

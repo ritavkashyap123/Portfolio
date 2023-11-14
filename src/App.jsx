@@ -1,5 +1,5 @@
 import "./App.css";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import { useEffect, useState } from "react";
 import AnimateRoutes from "./components/animation/AnimateRoutes";
 
@@ -40,9 +40,9 @@ function App() {
             duration={star.duration}
           />
         ))}
-        <HashRouter>
+        <BrowserRouter>
           <AnimateRoutes />
-        </HashRouter>
+        </BrowserRouter>
       </div>
     </>
   );

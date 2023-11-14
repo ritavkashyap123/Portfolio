@@ -5,34 +5,33 @@ import "./hero.scss";
 const Hero = () => {
 
   return (
-    <>
-      <div className="Hero" >
-        <div className="hero-left">
-          <div>
-            Hi ! <span className="head">Ritav Here</span>
-            <br />
-            <div className="tagline">
-              A focused <span>UI/UX</span> designer and{" "}
-              <span>Frontend Developer</span>
-            </div>
+    <div className="Hero" >
+      <div className="hero-left">
+        <div>
+          Hi ! <span className="head">Ritav Here</span>
+          <br />
+          <div className="tagline">
+            A focused <span>UI/UX</span> designer and{" "}
+            <span>Frontend Developer</span>
           </div>
-          <div className="hr">
-            <hr color="white" />
-          </div>
-          <div className="text">
-            I am a final year student of <span>Assam Engineering College</span>,
-            Persuing my <span>B.Tech</span> in{" "}
-            <span> Electronics and Telecommunication Engineering</span>. My
-            hometown is <span>Guwahati</span>. I do play with{" "}
-            <span>Robots</span> and <span>Electronics</span> staffs at my free
-            time. <span> Competitive Robotics </span> is one of my hobby. My
-            other hobbies are <span>Writing Poetry</span> in Assamese and{" "}
-            <span>Playing Valorant</span>.
-            <br />
-            <br />
-            <span className="span">Fun Fact:</span> I am addicted to{" "}
-            <span>Chess</span> and <span>Web Series</span>
-            {/* <ul>
+        </div>
+        <div className="hr">
+          <hr color="white" />
+        </div>
+        <div className="text">
+          I am a final year student of <span>Assam Engineering College</span>,
+          Persuing my <span>B.Tech</span> in{" "}
+          <span> Electronics and Telecommunication Engineering</span>. My
+          hometown is <span>Guwahati</span>. I do play with{" "}
+          <span>Robots</span> and <span>Electronics</span> staffs at my free
+          time. <span> Competitive Robotics </span> is one of my hobby. My
+          other hobbies are <span>Writing Poetry</span> in Assamese and{" "}
+          <span>Playing Valorant</span>.
+          <br />
+          <br />
+          <span className="span">Fun Fact:</span> I am addicted to{" "}
+          <span>Chess</span> and <span>Web Series</span>
+          {/* <ul>
             <li>
               I'm a final year Student of Assam Engineering College, Persuing my
               degree in <span>Electronics and Telecommunication Engineering</span>
@@ -45,13 +44,12 @@ const Hero = () => {
             <li>Learning backend in <span>Django</span> and <span>Flask</span></li>
             <li>Know the basics of <span>flutter</span> and <span>React-native</span> in the App dev section.</li>
           </ul> */}
-          </div>
-        </div>
-        <div className="hero-right">
-          <HeroRight />
         </div>
       </div>
-    </>
+      <div className="hero-right">
+        <HeroRight />
+      </div>
+    </div>
   );
 };
 
