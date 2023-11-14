@@ -31,6 +31,7 @@ function App() {
   return (
     <>
       <div>
+        {/* <ParticleCanvas /> */}
         {stars.map((star, index) => (
           <Star
             key={index}

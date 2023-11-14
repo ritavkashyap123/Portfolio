@@ -15,7 +15,7 @@ const Project = () => {
         animate={{ translateX: 0 }}
         exit={{ translateX: "100vw" }}
       >
-        Project
+        ABC
       </motion.div>
     </>
   );

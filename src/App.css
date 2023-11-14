@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto&family=Poppins&display=swap");
 
 body {
-  background: #000;
+  background: radial-gradient(circle, rgb(41, 34, 84) 0%, rgb(24, 7, 39) 100%);
   color: white;
   font-family: "Black Ops One";
   margin: 0;

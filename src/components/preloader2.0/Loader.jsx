@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
+import "./loader.scss";
 import Typewriter from "typewriter-effect";
 import { BsRocket } from "react-icons/bs";
 import { FcNext } from "react-icons/fc";
-import "./preloader.scss";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const Preloader = () => {
+const Loader = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -24,15 +24,14 @@ const Preloader = () => {
       rocketElement.removeEventListener("animationend", handleAnimationEnd);
     };
   }, [navigate]);
-
   return (
     <motion.div
-      className="startPage"
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       exit={{ scale: 0 }}
+      className="loader"
     >
-      <div className="Preloader">
+      <div className="typewriter">
         <Typewriter
           options={{
             strings: [
@@ -55,47 +54,10 @@ const Preloader = () => {
             // devMode: true
           }}
         />
-        <div className="rocket">
-          {/* <hr className="hr" style={{ color: "red" }} /> */}
-          <BsRocket style={{ rotate: "90deg" }} />
-        </div>
-        <div className="mountains">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 637 56">
-            <g>
-              <path
-                d="M1442,238.7l47.324-18.5,15.852,10.339,31.525,4.064,28.067-9.085,40.007,5.021,44.176-5.021,43.54-5.318,35.64-19.087,28.315-2.38,16.769-5.522,22.2,15.886,32.527,4.37,8.29-4.37,20.552-1.979,12.426-8.385,68.581,14.733,13.666,12.55,35.66-2.649,30.294,8.446,31.5-8.446h6.278l3.432,5.8,21.256,2.649v14.256H1442Z"
-                transform="translate(-1442 -191)"
-                fill="#180727"
-              />
-            </g>
-          </svg>
-        </div>
-        {/* <div className="moon">
-          <div className="lines">
-          {Array.from({ length: 10 }, (_, index) => (
-            <div key={index} className="line"></div>
-          ))}
-        </div>
-        </div> */}
-        <div className="plane">
-          <div className="vlines">
-            <div className="left">
-              {Array.from({ length: 5 }, (_, index) => (
-                <div key={index} className="line"></div>
-              ))}
-            </div>
-            <div className="right">
-              {Array.from({ length: 5 }, (_, index) => (
-                <div key={index} className="line"></div>
-              ))}
-            </div>
-          </div>
-          <div className="lines">
-            {Array.from({ length: 10 }, (_, index) => (
-              <div key={index} className="line"></div>
-            ))}
-          </div>
-        </div>
+      </div>
+      <div className="rocket">
+        {/* <hr className="hr" style={{ color: "red" }} /> */}
+        <BsRocket style={{ rotate: "90deg" }} />
       </div>
       <div className="skipdiv">
         <div className="skipbtn">
@@ -104,8 +66,58 @@ const Preloader = () => {
           </div>
         </div>
       </div>
+      <div className="mountains">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 637 56">
+          <g>
+            <path
+              d="M1442,238.7l47.324-18.5,15.852,10.339,31.525,4.064,28.067-9.085,40.007,5.021,44.176-5.021,43.54-5.318,35.64-19.087,28.315-2.38,16.769-5.522,22.2,15.886,32.527,4.37,8.29-4.37,20.552-1.979,12.426-8.385,68.581,14.733,13.666,12.55,35.66-2.649,30.294,8.446,31.5-8.446h6.278l3.432,5.8,21.256,2.649v14.256H1442Z"
+              transform="translate(-1442 -191)"
+              fill="#180727"
+            />
+          </g>
+        </svg>
+      </div>
+
+      <div className="moon">
+        {/* <div className="lines">
+          {Array.from({ length: 10 }, (_, index) => (
+            <div key={index} className="line"></div>
+          ))}
+        </div> */}
+      </div>
+
+      <div className="plane">
+        <div className="vlines">
+          <div className="left">
+            {Array.from({ length: 5 }, (_, index) => (
+              <div key={index} className="line"></div>
+            ))}
+          </div>
+          <div className="right">
+            {Array.from({ length: 5 }, (_, index) => (
+              <div key={index} className="line"></div>
+            ))}
+          </div>
+        </div>
+        <div className="lines">
+          {Array.from({ length: 10 }, (_, index) => (
+            <div key={index} className="line"></div>
+          ))}
+        </div>
+      </div>
+
+      <div className="car">
+        <div className="wheels">
+          <div className="wheel"></div>
+          <div className="wheel"></div>
+          <div className="parts"></div>
+        </div>
+        <div className="body">
+          <div className="bumper"></div>
+        </div>
+      </div>
     </motion.div>
   );
 };
 
-export default Preloader;
+export default Loader;

@@ -35,7 +35,7 @@ const ContactRight = () => {
         setCameraPosition([1, 1, 1]);
       } else {
         setCanvasStyle({ height: "30vh" });
-        setCameraPosition([2, 2, 2]);
+        setCameraPosition([1, 1, 1]);
       }
     };
 
