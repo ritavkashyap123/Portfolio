@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./achievements.scss";
-import Navbar from "../../components/navbar/Navbar";
-import SocialIcons from "../../components/socialIcons/SocialIcons";
 
 const Achievements = () => {
   return (
@@ -11,7 +9,16 @@ const Achievements = () => {
       initial={{ translateX: "-100vw" }}
       animate={{ translateX: 0 }}
       exit={{ translateX: "100vw" }}
-    ></motion.div>
+    >
+      <div className="head">
+        <div class="glitch-wrapper">
+          <div class="glitch" data-text="Achievements">Achievements</div>
+        </div>
+        <div className="hr">
+          <hr color="white" />
+        </div>
+      </div>
+    </motion.div>
   );
 };
 

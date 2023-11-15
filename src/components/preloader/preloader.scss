@@ -54,87 +54,97 @@
       }
     }
     .plane {
-    z-index: 20;
-    height: 30%;
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    background: rgb(24, 7, 39);
-    overflow: hidden;
-    border-top: 2px solid #fe50b1;
-    box-shadow: 0 0 150px -60px #fe50b1;
-    background: linear-gradient(0deg, rgb(24, 7, 39) 60%, #4e0646 100%);
-    .vlines {
+      z-index: 20;
+      height: 30%;
       width: 100%;
-      height: 100%;
+      bottom: 0;
       position: absolute;
-      .line {
-        box-shadow: 0 0 5px #ff91cf;
-      }
-      .left {
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        border-right: 1px solid #fe50b1;
-        .line {
-          right: 0%;
-          width: 2px;
-          height: 100%;
-          position: absolute;
-          background: #fe50b1;
-          @for $i from 1 through 5 {
-            &:nth-child(#{$i}) {
-              right: 12% * $i;
-              transform-origin: 100% 0%;
-              transform: skewX(-35deg - 10deg * $i);
-            }
-          }
-        }
-      }
-      .right {
-        width: 50%;
-        height: 100%;
-        right: 0;
-        position: absolute;
-        border-left: 1px solid #fe50b1;
-        .line {
-          right: 0%;
-          width: 2px;
-          height: 100%;
-          position: absolute;
-          background: #fe50b1;
-          @for $i from 1 through 5 {
-            &:nth-child(#{$i}) {
-              left: 12% * $i;
-              transform-origin: 100% 0%;
-              transform: skewX(35deg + 10deg * $i);
-            }
-          }
-        }
-      }
-    }
-    .lines {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      .line {
+      background: rgb(24, 7, 39);
+      overflow: hidden;
+      border-top: 2px solid #fe50b1;
+      box-shadow: 0 0 150px -60px #fe50b1;
+      background: linear-gradient(0deg, rgb(24, 7, 39) 60%, #4e0646 100%);
+      .vlines {
         width: 100%;
-        height: 2px;
+        height: 100%;
         position: absolute;
-        bottom: 90%;
-        background: #fe50b1;
-        animation: linesSlide 3s ease-in infinite both;
-        box-shadow: 0 0 5px #ff91cf;
-        @for $i from 1 through 10 {
-          &:nth-child(#{$i}) {
-            animation-delay: 0.3s * $i;
+        .line {
+          box-shadow: 0 0 5px #ff91cf;
+        }
+        .left {
+          width: 50%;
+          height: 100%;
+          position: absolute;
+          border-right: 1px solid #fe50b1;
+          .line {
+            right: 0%;
+            width: 2px;
+            height: 100%;
+            position: absolute;
+            background: #fe50b1;
+            @for $i from 1 through 5 {
+              &:nth-child(#{$i}) {
+                right: 12% * $i;
+                transform-origin: 100% 0%;
+                transform: skewX(-35deg - 10deg * $i);
+              }
+            }
+          }
+        }
+        .right {
+          width: 50%;
+          height: 100%;
+          right: 0;
+          position: absolute;
+          border-left: 1px solid #fe50b1;
+          .line {
+            right: 0%;
+            width: 2px;
+            height: 100%;
+            position: absolute;
+            background: #fe50b1;
+            @for $i from 1 through 5 {
+              &:nth-child(#{$i}) {
+                left: 12% * $i;
+                transform-origin: 100% 0%;
+                transform: skewX(35deg + 10deg * $i);
+              }
+            }
+          }
+        }
+      }
+      .lines {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        .line {
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          bottom: 90%;
+          background: #fe50b1;
+          animation: linesSlide 3s ease-in infinite both;
+          box-shadow: 0 0 5px #ff91cf;
+          @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+              animation-delay: 0.3s * $i;
+            }
+          }
+          @keyframes linesSlide {
+            from {
+              bottom: 100%;
+              height: 2px;
+            }
+            to {
+              bottom: -10px;
+              height: 10px;
+            }
           }
         }
       }
     }
-  }
     .rocket {
       display: flex;
       position: absolute;
@@ -203,7 +213,7 @@
     .skipbtn {
       border: 1px solid white;
       border-radius: 3px;
-      background: linear-gradient(to right, white 50%, #00000000 50%);
+      background: linear-gradient(to left, white 50%, #00000000 50%);
       background-size: 200% 100%;
       background-position: right bottom;
       transition: all 0.5s ease-out;
@@ -216,14 +226,14 @@
         padding: 0.5rem 1rem;
         font-size: 16px;
         line-height: 2rem;
-        color: white;
+        color: black;
         transition: all 0.6s ease-out;
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 7rem;
         &:hover {
-          color: black;
+          color: white;
         }
       }
     }

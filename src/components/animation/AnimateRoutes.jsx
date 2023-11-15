@@ -11,25 +11,22 @@ import { AnimatePresence } from "framer-motion";
 import Navbar from "../navbar/Navbar";
 import SocialIcons from "../socialIcons/SocialIcons";
 
+const show = ["/home", "/skill", "/achievement", "/experience", "/project", "/contact"];
+
 const AnimateRoutes = () => {
-  const [show, isShow] = useState(false);
   const location = useLocation();
-
-  // Check if the current path is the preloader page
-  const isPreloaderPage = location.pathname === '/';
-
-  // Use useEffect to update the state when the path changes
-  useEffect(() => {
-    isShow(!isPreloaderPage);
-  }, [location.pathname]);
+  const isShow = !show.includes(location.pathname);
 
   return (
     <AnimatePresence>
-      {show && <Navbar />}
-      {show && <SocialIcons />}
+      {!isShow && (
+        <>
+          <Navbar />
+          <SocialIcons />
+        </>
+      )}
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Preloader />} />
-        {/* <Route path="/" element={<Loader />} /> */}
         <Route path="/home" element={<Home />} />
         <Route path="/skill" element={<Skills />} />
         <Route path="/achievement" element={<Achievements />} />

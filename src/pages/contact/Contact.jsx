@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./contact.scss";
-import Navbar from "../../components/navbar/Navbar";
-import SocialIcons from "../../components/socialIcons/SocialIcons";
 import ContactRight from "../../components/models/ContactRight";
 
 const Contact = () => {
@@ -14,7 +12,9 @@ const Contact = () => {
       exit={{ translateX: "100vw" }}
     >
       <div className="head">
-        Experience
+        <div class="glitch-wrapper">
+          <div class="glitch" data-text="Contact">Contact</div>
+        </div>
         <div className="hr">
           <hr color="white" />
         </div>
@@ -45,13 +45,15 @@ const Contact = () => {
                   />
                   <label className="label"> Message </label>
                 </div>
-                <div className="btn">
-                  <input
-                    type="submit"
-                    value="Submit"
-                    className="submit text"
-                  />
-                  <input type="reset" value="Reset" className="reset text" />
+                <div className="btn-div">
+                  <div className="more-link">
+                    <input
+                      type="submit"
+                      value="Submit"
+                      className="link"
+                    /></div>
+                  <div className="more-link">
+                    <input type="reset" value="Reset" className="link" /></div>
                 </div>
               </form>
             </div>

@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { FaStopwatch, FaMapMarkerAlt } from "react-icons/fa";
-import Navbar from "../../components/navbar/Navbar";
 import { motion } from "framer-motion";
 
 import "./experience.scss";
-import SocialIcons from "../../components/socialIcons/SocialIcons";
 
 const Experience = () => {
   const [isOpen1, setIsOpen1] = useState(false);
@@ -53,7 +51,9 @@ const Experience = () => {
       exit={{ translateX: "100vw" }}
     >
       <div className="head">
-        Experience
+        <div class="glitch-wrapper">
+          <div class="glitch" data-text="Experience">Experience</div>
+        </div>
         <div className="hr">
           <hr color="white" />
         </div>

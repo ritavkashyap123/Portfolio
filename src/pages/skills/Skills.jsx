@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import Navbar from "../../components/navbar/Navbar";
-import SocialIcons from "../../components/socialIcons/SocialIcons";
 import { motion } from "framer-motion";
-// import { BallCanvas } from "../../components/balls/Ball";
 
 import "./skills.scss";
 
@@ -226,7 +223,9 @@ const Skills = () => {
       exit={{ translateX: "100vw" }}
     >
       <div className="head">
-        Skills
+        <div class="glitch-wrapper">
+          <div class="glitch" data-text="Skills">Skills</div>
+        </div>
         <div className="hr">
           <hr color="white" />
         </div>

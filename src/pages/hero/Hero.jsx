@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeroRight from "../../components/models/HeroRight";
 import "./hero.scss";
 

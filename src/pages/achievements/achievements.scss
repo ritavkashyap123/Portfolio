@@ -1,7 +1,17 @@
 .Achievements {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 90vh;
+  width: 90%;
+  height: 90vh;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .head {
+    text-align: start;
+    margin: 1rem 2rem;
+    font-size: 2.5rem;
+    color: #ffffff;
+    .hr {
+      width: 10%;
+    }
+  }
 }
