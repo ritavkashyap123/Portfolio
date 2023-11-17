@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import "./contact.scss";
 import ContactRight from "../../components/models/ContactRight";
 
 const Contact = () => {
+  const clicked = () => {
+    alert('Form has been submitted.\nThanks for the feedback :)');
+  }
+
   return (
     <motion.div
       className="Contact"
@@ -23,7 +27,7 @@ const Contact = () => {
         <div className="box">
           <div className="content">
             <div className="left">
-              <form action="">
+              <form action="" onSubmit={clicked}>
                 <div className="input-group">
                   <input required type="text" className="input" id="name" />
                   <label className="label"> Name </label>
@@ -40,20 +44,19 @@ const Contact = () => {
                   <textarea
                     required
                     type="textarea"
+                    rows="5"
                     className="input"
                     id="message"
                   />
                   <label className="label"> Message </label>
                 </div>
                 <div className="btn-div">
-                  <div className="more-link">
-                    <input
-                      type="submit"
-                      value="Submit"
-                      className="link"
-                    /></div>
-                  <div className="more-link">
-                    <input type="reset" value="Reset" className="link" /></div>
+                  <input
+                    type="submit"
+                    value="Submit"
+                    className="submit"
+                  />
+                  <input type="reset" value="Reset" className="reset" />
                 </div>
               </form>
             </div>

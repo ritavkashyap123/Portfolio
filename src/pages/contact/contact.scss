@@ -75,6 +75,41 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            .submit {
+              color: white;
+              background: none;
+              border: none;
+              font: inherit;
+              line-height: 1;
+              margin: 0.5em;
+              padding: 1em 2em;
+              box-shadow: 0.3em 0.3em 0 0 #41ffef, inset 0.3em 0.3em 0 0 #41ffef;
+              transition: 0.5s;
+              cursor: pointer;
+              &:hover,
+              &:focus {
+                color: black;
+                box-shadow: 0 0 0 0 #41ffef, inset 6em 3.5em 0 0 #41ffef;
+                transition: 0.5s;
+              }
+            }
+            .reset {
+              color: white;
+              background: none;
+              border: none;
+              font: inherit;
+              line-height: 1;
+              margin: 0.5em;
+              padding: 1em 2em;
+              box-shadow: 0.3em 0.3em 0 0 #fe50b1, inset 0.3em 0.3em 0 0 #fe50b1;
+              transition: 0.5s;
+              cursor: pointer;
+              &:hover,
+              &:focus {
+                transition: 0.5s;
+                box-shadow: 0 0 0 0 #fe50b1, inset 6em 3.5em 0 0 #fe50b1;
+              }
+            }
           }
         }
         .right {
